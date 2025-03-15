@@ -19,8 +19,8 @@ PUBLIC_LINK_PATTERN = re.compile(r'(https?://)?(t\.me|telegram\.me)/([^/]+)(/(\d
 PRIVATE_LINK_PATTERN = re.compile(r'(https?://)?(t\.me|telegram\.me)/c/(\d+)(/(\d+))?')
 
 # MongoDB connection
-MONGO_URI = os.getenv("MONGO_DB", "mongodb+srv://ggn:surabhimusicbot@ggnvv.g6qusje.mongodb.net/?retryWrites=true&w=majority&appName=ggnvv")
-DB_NAME = os.getenv("DB_NAME", "telegram_downloader")
+MONGO_URI = os.getenv("MONGO_DB", "mongodb+srv://ellie535091:A8sx0Q3dVNPPku18@cluster0.ry133.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.getenv("DB_NAME", "Sunilvs2024")
 
 
 # Initialize MongoDB client
