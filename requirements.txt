@@ -10,7 +10,6 @@ motor
 pymongo
 pytz
 Pillow
-tgcrypto
 flask
 werkzeug==2.2.2
 mutagen
