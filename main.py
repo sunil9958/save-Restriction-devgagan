@@ -9,6 +9,16 @@ import os
 import sys
 from pyrogram.types import User, Chat
 
+import asyncio
+
+try:
+    loop = asyncio.get_running_loop()
+    if loop.is_closed():
+        raise RuntimeError("Event loop is closed")
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
 async def load_and_run_plugins():
     # Start the shared client
     client, app, userbot = await start_client()
